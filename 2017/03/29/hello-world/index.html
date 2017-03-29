@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     
     <title>Hello World | Hexo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="" />
+    
     <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
 Quick">
 <meta property="og:type" content="article">
@@ -27,12 +30,12 @@ Quick">
     
 
     <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
     <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
 
     <link rel="stylesheet" href="/css/style.css">
 
-    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
     
     
         <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
@@ -42,45 +45,39 @@ Quick">
     
     
     
-    
-
 
 </head>
 
 <body>
-    <div id="container">
+    <div id="wrap">
         <header id="header">
-    <div id="header-main" class="header-inner">
-        <div class="outer">
-            <a href="/" id="logo">
-                <i class="logo"></i>
-                <span class="site-title">Hexo</span>
-            </a>
-            <nav id="main-nav">
-                
-                    <a class="main-nav-link" href="/.">Home</a>
-                
-                    <a class="main-nav-link" href="/archives">Archives</a>
-                
-                    <a class="main-nav-link" href="/categories">Categories</a>
-                
-                    <a class="main-nav-link" href="/tags">Tags</a>
-                
-                    <a class="main-nav-link" href="/about">About</a>
-                
-            </nav>
-            
-                
-                <nav id="sub-nav">
-                    <div class="profile" id="profile-nav">
-                        <a id="profile-anchor" href="javascript:;">
-                            <img class="avatar" src="/css/images/avatar.png" />
-                            <i class="fa fa-caret-down"></i>
-                        </a>
-                    </div>
-                </nav>
-            
-            <div id="search-form-wrap">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
 
     <form class="search-form">
         <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
@@ -117,134 +114,51 @@ Quick">
 <script src="/js/insight.js"></script>
 
 </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div id="main-nav-mobile" class="header-sub header-inner">
-        <table class="menu outer">
-            <tr>
-                
-                    <td><a class="main-nav-link" href="/.">Home</a></td>
-                
-                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
-                
-                    <td><a class="main-nav-link" href="/categories">Categories</a></td>
-                
-                    <td><a class="main-nav-link" href="/tags">Tags</a></td>
-                
-                    <td><a class="main-nav-link" href="/about">About</a></td>
-                
-                <td>
-                    
-    <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
-    </div>
-
-                </td>
-            </tr>
-        </table>
     </div>
 </header>
-
-        <div class="outer">
-            
-                
-
-<aside id="profile">
-    <div class="inner profile-inner">
-        <div class="base-info profile-block">
-            <img id="avatar" src="/css/images/avatar.png" />
-            <h2 id="name">PPOffice</h2>
-            <h3 id="title">Web Developer &amp; Designer</h3>
-            <span id="location"><i class="fa fa-map-marker"></i>Harbin, China</span>
-            <a id="follow" target="_blank" href="https://github.com/ppoffice/">FOLLOW</a>
-        </div>
-        <div class="article-info profile-block">
-            <div class="article-info-block">
-                1
-                <span>post</span>
-            </div>
-            <div class="article-info-block">
-                0
-                <span>tag</span>
-            </div>
-        </div>
-        
-        <div class="profile-block social-links">
-            <table>
-                <tr>
-                    
-                    
-                    <td>
-                        <a href="http://github.com/ppoffice/hexo-theme-icarus" target="_blank" title="github" class=tooltip>
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </td>
-                    
-                    <td>
-                        <a href="/" target="_blank" title="twitter" class=tooltip>
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </td>
-                    
-                    <td>
-                        <a href="/" target="_blank" title="facebook" class=tooltip>
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </td>
-                    
-                    <td>
-                        <a href="/" target="_blank" title="dribbble" class=tooltip>
-                            <i class="fa fa-dribbble"></i>
-                        </a>
-                    </td>
-                    
-                    <td>
-                        <a href="/" target="_blank" title="rss" class=tooltip>
-                            <i class="fa fa-rss"></i>
-                        </a>
-                    </td>
-                    
-                </tr>
-            </table>
-        </div>
-        
-    </div>
-</aside>
-
-            
-            <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    uncategorized
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-hello-world" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
-        
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-            Hello World
+        Hello World
         </h1>
     
 
+            </header>
+        
+        
+            <div class="article-meta">
                 
-                    <div class="article-meta">
-                        
     <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/03/29/hello-world/">
+        <a href="/2017/03/29/hello-world/" class="article-date">
             <time datetime="2017-03-29T09:18:29.830Z" itemprop="datePublished">2017-03-29</time>
         </a>
     </div>
 
-
-                        
-                        
-                    </div>
                 
-            </header>
+            </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-        
-            
             <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
@@ -255,24 +169,15 @@ Quick">
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
-        
         </div>
         <footer class="article-footer">
-            <div class="share-container">
+            
 
 
 
-</div>
-
-    <a data-url="https://ruirui-hexo.github.io/2017/03/29/hello-world/" data-id="cj0uz5gzq0000dgvs3h1no0sc" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://ruirui-hexo.github.io/2017/03/29/hello-world/" data-id="cj0uzbbah0000gsvsw0muylhq" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
         $('body').on('click', function() {
             $('.article-share-box.on').removeClass('on');
         }).on('click', '.article-share-link', function(e) {
@@ -297,10 +202,10 @@ Quick">
                     '<div id="' + id + '" class="article-share-box">',
                         '<input class="article-share-input" value="' + url + '">',
                         '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
                         '</div>',
                     '</div>'
                 ].join('');
@@ -330,21 +235,10 @@ Quick">
     })(jQuery);
 </script>
 
-            
-    
-        <a href="https://ruirui-hexo.github.io/2017/03/29/hello-world/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="https://ruirui-hexo.github.io/2017/03/29/hello-world/">Comments</a>
-    
-
         </footer>
     </div>
-    
-        
-
-    
 </article>
 
-
-    
     <section id="comments">
     
         
@@ -355,13 +249,74 @@ Quick">
     
     </section>
 
-</section>
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
             
-                <aside id="sidebar">
-   
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
         
+    
+    <div class="widgets-container">
+        
+            
+                
     <div class="widget-wrap">
-        <h3 class="widget-title">recent</h3>
+        <h3 class="widget-title">recents</h3>
         <div class="widget">
             <ul id="recent-post" class="">
                 
@@ -372,6 +327,7 @@ Quick">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
+    
     
 </a>
 
@@ -388,23 +344,27 @@ Quick">
         </div>
     </div>
 
-    
-        
-    
-        
-    <div class="widget-wrap">
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
             <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
-    
-        
-    
-        
-    
-        
+
+            
+                
+
+            
+                
+
+            
+                
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">links</h3>
         <div class="widget">
@@ -419,35 +379,43 @@ Quick">
     </div>
 
 
-    
-    <div id="toTop" class="fa fa-angle-up"></div>
-</aside>
             
+        
+    </div>
+</aside>
+                </div>
+            </div>
         </div>
         <footer id="footer">
-    <div class="outer">
-        <div id="footer-info" class="inner">
-            &copy; 2017 John Doe<br>
-            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2017 John Doe</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
         </div>
     </div>
 </footer>
         
     
     <script>
-    var disqus_config = function () {
-        
-            this.page.url = 'https://ruirui-hexo.github.io/2017/03/29/hello-world/';
-        
-        this.page.identifier = 'hello-world';
-    };
-    (function() { 
-        var d = document, s = d.createElement('script');  
-        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'https://ruirui-hexo.github.io/2017/03/29/hello-world/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
-</script>
+    </script>
 
 
 
@@ -467,7 +435,6 @@ Quick">
         <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
     
     
-
 
 
 <!-- Custom Scripts -->
