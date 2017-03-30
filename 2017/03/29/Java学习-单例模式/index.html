@@ -22,7 +22,7 @@
 饿汉模式（在类加载时就完成了初始化）
 
 ###懒汉式单例模式懒汉模式代码如下：
-123456789101112131415161718package Singleton;		public class La">
+1234567891011121314151617181920package singleton;public class">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java学习-单例模式">
 <meta property="og:url" content="https://ruirui-hexo.github.io/2017/03/29/Java学习-单例模式/index.html">
@@ -41,8 +41,8 @@
 饿汉模式（在类加载时就完成了初始化）
 
 ###懒汉式单例模式懒汉模式代码如下：
-123456789101112131415161718package Singleton;		public class La">
-<meta property="og:updated_time" content="2017-03-30T02:15:21.531Z">
+1234567891011121314151617181920package singleton;public class">
+<meta property="og:updated_time" content="2017-03-30T02:24:07.593Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java学习-单例模式">
 <meta name="twitter:description" content="目标
@@ -59,7 +59,7 @@
 饿汉模式（在类加载时就完成了初始化）
 
 ###懒汉式单例模式懒汉模式代码如下：
-123456789101112131415161718package Singleton;		public class La">
+1234567891011121314151617181920package singleton;public class">
     
 
     
@@ -217,14 +217,22 @@
 <li>饿汉模式（在类加载时就完成了初始化）</li>
 </ul>
 <p>###懒汉式单例模式<br>懒汉模式代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">package Singleton;</div><div class="line">	</div><div class="line">	public class LazySingleton &#123; </div><div class="line">	    private static LazySingleton intance = null;</div><div class="line">	    	    private LazySingleton()</div><div class="line">	    &#123;</div><div class="line">	        </div><div class="line">	    &#125;</div><div class="line">	    </div><div class="line">	    public static synchronized LazySingleton getInstance()</div><div class="line">	    &#123;</div><div class="line">	        if(intance == null)</div><div class="line">	        &#123;</div><div class="line">	            intance = new LazySingleton();</div><div class="line">	        &#125;</div><div class="line">	        return intance;</div><div class="line">	    &#125;</div><div class="line">	&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">package singleton;</div><div class="line"></div><div class="line">public class LazySingleton &#123;</div><div class="line"></div><div class="line">	//懒汉单例模式</div><div class="line">	//比较懒，在类加载时，不创建实例，因此类加载速度快，但运行时获取对象的速度慢</div><div class="line">	</div><div class="line">	//静态私有成员，没有初始化</div><div class="line">	private static LazySingleton instance =null;</div><div class="line">	</div><div class="line">	private LazySingleton()&#123;</div><div class="line">		//构造私有函数</div><div class="line">	&#125;</div><div class="line">	private static synchronized LazySingleton getInstance()&#123; //静态，同步，公开访问点</div><div class="line">		if (instance==null) &#123;</div><div class="line">			instance=new LazySingleton();</div><div class="line">		&#125;</div><div class="line">		return instance;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="关键点-1"><a href="#关键点-1" class="headerlink" title="关键点"></a>关键点</h3><p>关键点：（代码注释上已给出）</p>
 <ul>
 <li>构造函数定义为私有—不能在别的类中来获取该类的对象，只能在类自身中得到自己的对象</li>
 <li>成员变量为static的，没有初始化—类加载快，但访问类的唯一实例慢，static保证在自身类中获取自身对象</li>
 <li>公开访问点getInstance：public和synchronized的—public保证对外公开，synchronized同步保证多线程时的正确性（因为类变量不是在加载时初始化的）</li>
 </ul>
-<p>More info: <a href="https://ruirui-hexo.github.io/2017/03/29/Java学习-单例模式/">更多</a></p>
+<p>###饿汉式单例模式<br>饿汉模式代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">package singleton;</div><div class="line"></div><div class="line">public class Singleton1 &#123;</div><div class="line"></div><div class="line">	//饿汉单例模式</div><div class="line">	//类加载时就完成了初始化，所以类加载比较慢，但是获取对象的速度快</div><div class="line">	</div><div class="line">	//静态私有成员，已初始化</div><div class="line">	private static final Singleton1 instance =new Singleton1();</div><div class="line">	private Singleton1()&#123;</div><div class="line">		//私有构造函数</div><div class="line">	&#125;</div><div class="line">	public static Singleton1 getInstance()&#123;</div><div class="line">		return instance;   //静态，不用同步（类加载时已初始化，不会有多线程的问题）</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="关键点-2"><a href="#关键点-2" class="headerlink" title="关键点"></a>关键点</h3><p>关键点：（代码注释上已给出）</p>
+<ul>
+<li>构造函数定义为私有—不能在别的类中来获取该类的对象，只能在类自身中得到自己的对象</li>
+<li>静态私有成员–在类加载时已初始化</li>
+<li>公开访问点getInstance—–不需要同步，因为在类加载时已经初始化完毕，也不需要判断null，直接返回</li>
+</ul>
+<p>More info: <a href="http://blog.csdn.net/lanzhizhuxia/article/details/7920556" target="_blank" rel="external">更多</a></p>
 
         </div>
         <footer class="article-footer">
@@ -232,7 +240,7 @@
 
 
 
-    <a data-url="https://ruirui-hexo.github.io/2017/03/29/Java学习-单例模式/" data-id="cj0vrpyou0000vkvsltnx0ej6" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="https://ruirui-hexo.github.io/2017/03/29/Java学习-单例模式/" data-id="cj0vs17rh0000acvsyidpzm65" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
