@@ -70,15 +70,7 @@
                                         
                                     
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/about">关于</a>
-                                </li>
-                            
-                                <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/">index.music</a>
-                                </li>
-                            
-                                <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/tags">index.tags</a>
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
                                 </li>
                             
                         </ul>
@@ -172,6 +164,16 @@
 </span>
 
     
+
+     var thumbnailUrl = thumbnail(post) 
+    if (thumbnailUrl) { 
+        <span style="background-image:url(- thumbnailUrl )" alt="= post.title " class="thumbnail-image"></span>
+     } else { 
+        <span class="thumbnail-image thumbnail-none"></span>
+     } 
+     if (typeof(counter) !== 'undefined' && counter) {
+         partial('comment/counter') 
+     } 
 </a>
 
         
@@ -218,6 +220,16 @@ Quick
 </span>
 
     
+
+     var thumbnailUrl = thumbnail(post) 
+    if (thumbnailUrl) { 
+        <span style="background-image:url(- thumbnailUrl )" alt="= post.title " class="thumbnail-image"></span>
+     } else { 
+        <span class="thumbnail-image thumbnail-none"></span>
+     } 
+     if (typeof(counter) !== 'undefined' && counter) {
+         partial('comment/counter') 
+     } 
 </a>
 
         
@@ -315,6 +327,16 @@ Quick
         <span class="thumbnail-image thumbnail-none"></span>
     
     
+
+     var thumbnailUrl = thumbnail(post) 
+    if (thumbnailUrl) { 
+        <span style="background-image:url(- thumbnailUrl )" alt="= post.title " class="thumbnail-image"></span>
+     } else { 
+        <span class="thumbnail-image thumbnail-none"></span>
+     } 
+     if (typeof(counter) !== 'undefined' && counter) {
+         partial('comment/counter') 
+     } 
 </a>
 
                         </div>
@@ -335,6 +357,16 @@ Quick
         <span class="thumbnail-image thumbnail-none"></span>
     
     
+
+     var thumbnailUrl = thumbnail(post) 
+    if (thumbnailUrl) { 
+        <span style="background-image:url(- thumbnailUrl )" alt="= post.title " class="thumbnail-image"></span>
+     } else { 
+        <span class="thumbnail-image thumbnail-none"></span>
+     } 
+     if (typeof(counter) !== 'undefined' && counter) {
+         partial('comment/counter') 
+     } 
 </a>
 
                         </div>

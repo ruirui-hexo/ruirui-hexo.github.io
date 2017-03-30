@@ -76,15 +76,7 @@ Quick">
                                         
                                     
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/about">关于</a>
-                                </li>
-                            
-                                <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/">index.music</a>
-                                </li>
-                            
-                                <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/tags">index.tags</a>
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
                                 </li>
                             
                         </ul>
@@ -187,7 +179,7 @@ Quick">
 
 
 
-    <a data-url="https://ruirui-hexo.github.io/2017/03/29/hello-world/" data-id="cj0vs4rnm00007kvs37cyum1h" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="https://ruirui-hexo.github.io/2017/03/29/hello-world/" data-id="cj0vvgemb0001pgvs9z9phjm5" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -328,6 +320,16 @@ Quick">
         <span class="thumbnail-image thumbnail-none"></span>
     
     
+
+     var thumbnailUrl = thumbnail(post) 
+    if (thumbnailUrl) { 
+        <span style="background-image:url(- thumbnailUrl )" alt="= post.title " class="thumbnail-image"></span>
+     } else { 
+        <span class="thumbnail-image thumbnail-none"></span>
+     } 
+     if (typeof(counter) !== 'undefined' && counter) {
+         partial('comment/counter') 
+     } 
 </a>
 
                         </div>
@@ -348,6 +350,16 @@ Quick">
         <span class="thumbnail-image thumbnail-none"></span>
     
     
+
+     var thumbnailUrl = thumbnail(post) 
+    if (thumbnailUrl) { 
+        <span style="background-image:url(- thumbnailUrl )" alt="= post.title " class="thumbnail-image"></span>
+     } else { 
+        <span class="thumbnail-image thumbnail-none"></span>
+     } 
+     if (typeof(counter) !== 'undefined' && counter) {
+         partial('comment/counter') 
+     } 
 </a>
 
                         </div>
