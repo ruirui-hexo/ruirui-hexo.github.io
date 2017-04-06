@@ -3,26 +3,50 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Hello World | Rainie&#39;s Blog</title>
+    <title>Java学习-类和对象的初始化顺序 | Rainie&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="Hexo" />
+        <meta name="keywords" content="Java,Technology" />
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qui">
+    <meta name="description" content="目标
+从阿里巴巴笔试题看Java加载顺序
+
+static
+公有属性，可以由类名称直接访问
+静态方法，可以由类名称直接调用方法
+静态方法或属性，可以在对象实例化之前就调用
+
+###阿里巴巴笔试题
+12345678910111213141516171819202122232425262728293031323334public class Test0 &amp;#123;    public static">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://ruirui-hexo.github.io/2017/03/30/hello-world/index.html">
+<meta property="og:title" content="Java学习-类和对象的初始化顺序">
+<meta property="og:url" content="https://ruirui-hexo.github.io/2017/04/05/Java学习-类和对象的初始化顺序/index.html">
 <meta property="og:site_name" content="Rainie's Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qui">
-<meta property="og:image" content="https://ruirui-hexo.github.io/assets/blogImg/hello-world.jpg">
-<meta property="og:updated_time" content="2017-03-30T14:10:58.531Z">
+<meta property="og:description" content="目标
+从阿里巴巴笔试题看Java加载顺序
+
+static
+公有属性，可以由类名称直接访问
+静态方法，可以由类名称直接调用方法
+静态方法或属性，可以在对象实例化之前就调用
+
+###阿里巴巴笔试题
+12345678910111213141516171819202122232425262728293031323334public class Test0 &amp;#123;    public static">
+<meta property="og:image" content="http://ono99zw27.bkt.clouddn.com/images/fav/timg.jpg">
+<meta property="og:updated_time" content="2017-04-06T13:32:13.742Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qui">
-<meta name="twitter:image" content="https://ruirui-hexo.github.io/assets/blogImg/hello-world.jpg">
+<meta name="twitter:title" content="Java学习-类和对象的初始化顺序">
+<meta name="twitter:description" content="目标
+从阿里巴巴笔试题看Java加载顺序
+
+static
+公有属性，可以由类名称直接访问
+静态方法，可以由类名称直接调用方法
+静态方法或属性，可以在对象实例化之前就调用
+
+###阿里巴巴笔试题
+12345678910111213141516171819202122232425262728293031323334public class Test0 &amp;#123;    public static">
+<meta name="twitter:image" content="http://ono99zw27.bkt.clouddn.com/images/fav/timg.jpg">
     
 
     
@@ -134,18 +158,18 @@ Qui">
                         <div class="main-body-header">
     <h1 class="header">
     
-    uncategorized
+    <a class="page-title-link" href="/categories/Technology/">Technology</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Technology/Java/">Java</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-hello-world" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-Java学习-类和对象的初始化顺序" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Hello World
+        Java学习-类和对象的初始化顺序
         </h1>
     
 
@@ -155,31 +179,76 @@ Qui">
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2017/03/30/hello-world/" class="article-date">
-            <time datetime="2017-03-30T08:57:42.000Z" itemprop="datePublished">2017-03-30</time>
+        <a href="/2017/04/05/Java学习-类和对象的初始化顺序/" class="article-date">
+            <time datetime="2017-04-05T08:10:51.813Z" itemprop="datePublished">2017-04-05</time>
         </a>
     </div>
 
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Hexo/">Hexo</a>
+        <a class="tag-link" href="/tags/Java/">Java</a>, <a class="tag-link" href="/tags/Technology/">Technology</a>
     </div>
 
             </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p><img src="/assets/blogImg/hello-world.jpg" alt=""> </p>
-<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+            <p><img src="http://ono99zw27.bkt.clouddn.com/images/fav/timg.jpg" alt=""> </p>
+<h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><ul>
+<li>从阿里巴巴笔试题看Java加载顺序</li>
+</ul>
+<h3 id="static"><a href="#static" class="headerlink" title="static"></a>static</h3><ul>
+<li>公有属性，可以由类名称直接访问</li>
+<li>静态方法，可以由类名称直接调用方法</li>
+<li>静态方法或属性，可以在对象实例化之前就调用</li>
+</ul>
+<p>###阿里巴巴笔试题</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">public class Test0 &#123;</div><div class="line">    public static int k = 0;</div><div class="line">    public static Test0 t1 = new Test0(&quot;t1&quot;);</div><div class="line">    public static Test0 t2 = new Test0(&quot;t2&quot;);</div><div class="line">    public static int i = print(&quot;i&quot;);</div><div class="line">    public static int n = 99;</div><div class="line">     </div><div class="line">    public int j = print(&quot;j&quot;);</div><div class="line">     </div><div class="line">    &#123;</div><div class="line">        print(&quot;构造块&quot;);</div><div class="line">    &#125;</div><div class="line">     </div><div class="line">    static &#123;</div><div class="line">        print(&quot;静态块&quot;);</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    public Test0(String str) &#123;</div><div class="line">        System.out.println((++k) + &quot;:&quot; + str + &quot;   i=&quot; + i + &quot;    n=&quot; + n);</div><div class="line">        ++i;</div><div class="line">        ++n;</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    private static int print(String str) &#123;</div><div class="line">        System.out.println((++k) + &quot;:&quot; + str + &quot;   i=&quot; + i + &quot;   n=&quot; + n);</div><div class="line">        ++n;</div><div class="line">        return ++i;</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    public static void main(String[] args) &#123;</div><div class="line">        Test0 t = new Test0(&quot;init&quot;);</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>运行结果如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">1:j   i=0   n=0</div><div class="line">2:构造快   i=1   n=1</div><div class="line">3:t1    i=2  n=2</div><div class="line">4:j   i=3   n=3</div><div class="line">5:构造快   i=4   n=4</div><div class="line">6:t2    i=5  n=5</div><div class="line">7:i   i=6   n=6</div><div class="line">8:静态块   i=7   n=99</div><div class="line">9:j   i=8   n=100</div><div class="line">10:构造快   i=9   n=101</div><div class="line">11:init    i=10  n=102</div></pre></td></tr></table></figure>
+<h3 id="关键点"><a href="#关键点" class="headerlink" title="关键点"></a>关键点</h3><p>关键点：（代码注释上已给出）</p>
+<ul>
+<li>先初始化静态成员k=0,k = 0;t1 = new Test1(“t1”); t2 = new Test1(“t2”);i = print(“i”); int n = 99;，所以应该是先k=0，</li>
+<li>接着初始化t1，t1的初始化是调用构造方法，所以先初始化对象，而初始化对象就像上面的说明先初始化实例成员j和代码块print(“构造块”);，此时k=0;++k后k=1，i和n的初始值都为0，因此初始化j的时候打印”1:j   i=0   n=0”,接着++i;++n;后i和n的值都为1，初始化代码块print(“构造块”)的时候打印”2:构造块   i=1   n=1”;</li>
+<li>后面的静态成员和实例成员的初始化跟上面步骤1,2类似，自己推导一下就能得到结果；</li>
+</ul>
+<p>###总结</p>
+<p>几大原则</p>
+<p>一、静态成员变量（static）</p>
+<ul>
+<li>静态成员变量为类变量，所有对象共享同一内存空间</li>
+<li>静态成员变量的声明和定义仅在首次加载时执行一次</li>
+<li>手机加载类时首先对所有静态成员变量根据类型默认赋初值，然后再对有右值的赋右值</li>
+</ul>
+<p>二、静态初始块</p>
+<ul>
+<li>多个静态成员变量与静态初始化块参照出现顺序先后执行</li>
+</ul>
+<p>三、动态成员变量</p>
+<ul>
+<li>动态成员变量定义，在每次实例化对象时，在构造函数之前执行</li>
+</ul>
+<p>四、动态初始化块</p>
+<ul>
+<li>动态初始化块的执行是在每次实例化对象时，在构造函数之前执行</li>
+<li>多个动态成员变量与动态初始化块参照出现顺序先后执行</li>
+</ul>
+<p>总结：总的来说，在不涉及继承的前提下，当首次加载类时，按照如下顺序执行</p>
+<ul>
+<li>按照出现顺序先后执行静态成员变量定义与静态初始化块</li>
+<li>按照出现顺序先后执行动态成员变量定义与动态初始化块</li>
+<li>执行构造函数</li>
+<li>再次实例化对象时只执行第2、3步即可</li>
+</ul>
+<p>五、当涉及到继承时，按如下顺序执行</p>
+<ul>
+<li>执行父类的静态成员变量定义与静态初始化块，执行子类的静态成员变量定义与静态初始化块</li>
+<li>执行父类的非静态成员变量定义与动态初始化块，执行父类构造方法</li>
+<li>执行子类的非静态成员变量定义与动态初始化块，执行子类构造方法</li>
+</ul>
+<p>另：父类构造方法中用到的方法如果已被子类重写，那么在构造子类对象时在调用父类构造函数中使用子类重写的方法。</p>
+<p>More info: <a href="http://blog.csdn.net/cherishme1988/article/details/12095637" target="_blank" rel="external">更多</a></p>
 
         </div>
         <footer class="article-footer">
@@ -313,16 +382,12 @@ Qui">
         
 <nav id="article-nav">
     
-        <a href="/2017/03/30/Java学习-单例模式/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            Java学习-单例模式
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
+        <a href="/2017/03/31/Java学习-排序算法/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Java学习-排序</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
     
 </nav>
 
